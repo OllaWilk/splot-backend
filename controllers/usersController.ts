@@ -63,7 +63,7 @@ export const loginUser = async (req: Request, res: Response) => {
 
     res.status(200).json({ user, token });
   } catch (error) {
-    res.status(400).json({ error: error.message + 'COŚ POSZŁO NIE TAK' });
+    res.status(400).json({ error: error.message });
   }
 };
 
